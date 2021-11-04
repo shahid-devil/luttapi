@@ -47,26 +47,6 @@ the user is responsible.
 𝙰𝚌𝚝𝚒𝚟𝚎 🟢
 ```
 
-## 𝐋𝐚𝐭𝐞𝐬𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🙋🏻‍♀️
-
-- ✅ Fixed insta downloader
-- ✅ list changed into luttapi
-- ✅ Eva Artifical Intelligence ...
-
-```
-   New Updates Coming soon 🙂
-```
-
-## 𝐔𝐩𝐜𝐨𝐦𝐢𝐧𝐠 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💁🏻‍♀️
-
-- ⬆️ New Logo Maker
-- ⬆️ And some others.....
-
-
-<div align="center">
-  <img border-radius: 15px src="https://ephmedia.giphy.com/1beb5ea3-375e-456e-a58a-2514927a4ea4.gif" width="250" height="250"/>
-  <p align="center">
-
 
 <a href="#"><img title="luttapi" src="https://img.shields.io/badge/luttapi-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
