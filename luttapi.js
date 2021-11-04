@@ -11,7 +11,7 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
- PLKAFN: process.env.BAD_WORDS === undefined ? false : process.env.BAD_WORDS,
+ SHAZZAFN: process.env.BAD_WORDS === undefined ? false : process.env.BAD_WORDS,
  PHONE: process.env.NUMBER === undefined ? '+918301985859' : process.env.NUMBER,   
  OA_NAME: process.env.DEPLOYER === undefined ? 'Someone' : process.env.DEPLOYER,    
 };
