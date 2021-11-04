@@ -1,6 +1,7 @@
 /* Copyright (C) 2020 Yusuf Usta.
-RECODDED BY AFNANPPLK
-Plk  
+RECODDED BY SHAHID SER
+luttapi
+Credit by afnan plk
 */
 
 const os = require("os");
@@ -134,8 +135,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         });
 
         console.log(
-            chalk.green.bold('𝚙𝚒𝚗𝚔𝚢 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 👻'));
-            await conn.sendMessage(conn.user.jid, "ᴘɪɴᴋʏ ɪꜱ ᴀʟʟ ꜱᴇᴛ", MessageType.text);
+            chalk.green.bold(𝚕𝚞𝚝𝚝𝚊𝚙𝚒 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 ' + config.WORKTYPE + ' 𝚗𝚘𝚠 😈'));
+            await conn.sendMessage(conn.user.jid, "ʟᴜᴛᴛᴀᴘɪ ɪꜱ ᴀʟʟ ꜱᴇᴛ", MessageType.text);
             await conn.sendMessage(conn.user.jid, "``` WORKING " + config.WORKTYPE + "```" , MessageType.text);
     });
     
@@ -277,8 +278,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '__PINKYBOT_☠☠_[error] ' +
-                                    '\n\n*👻 ' + error + '*\n'
+                                await conn.sendMessage(conn.user.jid, '_LUTTAPIBOT_😔😔_[error] ' +
+                                    '\n\n*🤧 ' + error + '*\n'
                                     , MessageType.text);
                             }
                         }
