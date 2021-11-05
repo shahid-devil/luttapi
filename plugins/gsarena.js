@@ -8,7 +8,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 MyPnky.addCommand({pattern: 'device ?(.*)', fromMe: true, desc: 'get deatil of requested device' , dontAddCommandList: true }, async (message, match) => {
     
