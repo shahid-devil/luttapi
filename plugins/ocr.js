@@ -14,7 +14,7 @@ const tesseract = require("node-tesseract-ocr")
 const langs = require('langs');
 const Language = require('../language');
 const Lang = Language.getString('ocr');
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDPLK == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 
     MyPnky.addCommand({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
