@@ -16,7 +16,7 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 
     MyPnky.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
@@ -74,7 +74,7 @@ r_text[26] = "The only person you are destined to become is the person you decid
 r_text[27] = "When we strive to become better than we are, everything around us becomes better too.\n       -Paulo Coelho";
 r_text[28] = "There are three things you can do with your life: You can waste it, you can spend it, or you can invest it. The best use of your life is to invest it in something that will last longer than your time on Earth.\n       -Rick Warren";
 r_text[29] = "You only pass through this life once, you don't come back for an encore.\n       -Elvis Presley";
-r_text[30] = "motivate cheyaan aarkum kayyum ath cheyth kaanikkaaana paad.\n       -Pinky";    
+r_text[30] = "motivate cheyaan aarkum kayyum ath cheyth kaanikkaaana paad.\n       -luttapi";    
 var i = Math.floor(31*Math.random())
        
     if (Config.ALIVEMSG.includes('{pp}')) {
@@ -87,18 +87,20 @@ var i = Math.floor(31*Math.random())
 		   
 		   var a_plk = new Array ();
 
-        a_plk[0] = "https://i.imgur.com/zdcqaaG.jpeg";
-        a_plk[1] = "https://mcdn.wallpapersafari.com/medium/20/69/juFNVl.jpg";
-        a_plk[2] = "https://cdn.wallpapersafari.com/51/57/WXxpck.jpg";
-        a_plk[3] = "https://cdn.wallpapersafari.com/72/42/nAdV2j.jpg";
-        a_plk[4] = "https://cdn.wallpapersafari.com/55/85/n5cLrp.jpg";
+        a_plk[0] = "https://i.imgur.com/JbnQIUi.jpeg";
+        a_plk[1] = "https://i.imgur.com/UNxGuRN.jpeg";
+        a_plk[2] = "https://i.imgur.com/N2wUmvZ.jpeg";
+        a_plk[3] = "https://i.imgur.com/1RIOpsu.jpeg";
+        a_plk[4] = "https://i.imgur.com/hWtoqYC.jpeg";
         a_plk[5] = "https://i.imgur.com/zdcqaaG.jpeg";
-        a_plk[6] = "https://mcdn.wallpapersafari.com/medium/55/25/KrvA7S.jpg";
-        a_plk[7] = "https://images.pexels.com/photos/8294554/pexels-photo-8294554.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
-        a_plk[8] = "https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
-        a_plk[9] = "https://wallpapercave.com/wp/wp2957455.jpg";
-        a_plk[10] = "https://i.imgur.com/1PPJq0Q.jpeg";
-	 var p = Math.floor(11*Math.random())
+        a_plk[6] = "https://i.imgur.com/bDJBX99.jpeg";
+        a_plk[7] = "https://i.imgur.com/Aj3emqd.jpeg";
+        a_plk[8] = "https://i.imgur.com/zSi66Uj.jpeg";
+        a_plk[9] = "https://i.imgur.com/0brHoyn.jpeg";
+        a_plk[10] = "https://i.imgur.com/5s7aHIp.jpeg";
+	a_plk[11] = "https://i.imgur.com/eeIRY92.jpeg";
+        a_plk[12] = "https://i.imgur.com/Nwez5Ot.jpeg";
+         var p = Math.floor(13*Math.random())
 
         var plk_alive = await axios.get(`${a_plk[p]}`, { responseType: 'arraybuffer' })
 //codded by afnanplk
