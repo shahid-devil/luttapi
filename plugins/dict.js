@@ -14,7 +14,7 @@ const Language = require('../language');
 const Lang = Language.getString('weather');
 const { errorMessage, infoMessage } = require('../helpers');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 
 MyPnky.addCommand({pattern: 'lngcode', fromMe: false, dontAddCommandList: true}, (async (message, match) => {    
 
