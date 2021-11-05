@@ -20,7 +20,7 @@ const pipeline = promisify(stream.pipeline);
 const Language = require('../language');
 const Lang = Language.getString('removebg');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
     
 
