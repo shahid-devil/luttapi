@@ -14,7 +14,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('unvoice'); // Language support
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 
   MyPnky.addCommand({pattern: 'U ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
