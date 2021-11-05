@@ -6,7 +6,7 @@ const config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('weather');
-if (config.STANDPLK == 'off' || config.STANDPLK == 'OFF') {
+if (config.STANDSHAZZ == 'off' || config.STANDSHAZZ == 'OFF') {
 if (config.WORKTYPE == 'private') {
 
     MyPnky.addCommand({pattern: 'sweather ?(.*)', fromMe: true, desc: "Gives you the weekly interpretations of space weather observations provided by the Space Weather Research Center (SWRC) for a p."}, async (message, match) => {
@@ -128,13 +128,13 @@ if (config.WORKTYPE == 'private') {
 	  }
   });
 
-    MyPnky.addCommand({pattern: 'molu ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
+    MyPnky.addCommand({pattern: 'luttapi ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, ' \n\n*mwolus* 💗' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n' , MessageType.text,{quoted: message.data});
+	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, ' \n\n*luttapi* 🙈' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n' , MessageType.text,{quoted: message.data});
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
@@ -148,10 +148,10 @@ if (config.WORKTYPE == 'private') {
         }
 
         if (config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'ᴘɪɴᴋʏ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀꜰɴᴀɴᴘʟᴋ' , MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid,ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Sʜᴀʜɪᴅ Sʜᴀᴢᴢ' , MessageType.text, { quoted: message.data });
         }
         else {
-            await message.client.sendMessage(message.jid,config.PLK, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid,config.SHAZZ, MessageType.text, { quoted: message.data });
         }
     }));
 
@@ -290,13 +290,13 @@ else if (config.WORKTYPE == 'public') {
 	  }
   });
 
-    MyPnky.addCommand({pattern: 'molu ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
+    MyPnky.addCommand({pattern: 'luttapi ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, ' \n\n*Mwolus* 💗' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n' , MessageType.text,{quoted: message.data});
+	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, ' \n\n*luttapi* 🙈' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n' , MessageType.text,{quoted: message.data});
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
@@ -310,10 +310,10 @@ else if (config.WORKTYPE == 'public') {
         }
 
         if (config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'ᴘɪɴᴋʏ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀꜰɴᴀɴᴘʟᴋ' , MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid,'ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Sʜᴀʜɪᴅ Sʜᴀᴢᴢ' , MessageType.text, { quoted: message.data });
         }
         else {
-            await message.client.sendMessage(message.jid,config.PLK, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid,config.SHAZZ, MessageType.text, { quoted: message.data });
         }
     }));
 
