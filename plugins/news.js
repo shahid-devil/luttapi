@@ -12,7 +12,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 MyPnky.addCommand({pattern: 'news ?(.*)', fromMe: false, desc: Lang.NEWS_DESC}, async (message, match) => {
 	if (match[1] === '') return await message.reply(Lang.NEED_CATEGORY);
 	const url = `https://inshortsapi.vercel.app/news?category=${match[1]}`;
