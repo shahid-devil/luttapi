@@ -9,7 +9,7 @@ const heroku = new Heroku({
 });
 let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
-if (config.STANDPLK == 'off' || config.STANDPLK == 'OFF') {
+if (config.STANDSHAZZ == 'off' || config.STANDSHAZZ == 'OFF') {
    var l_dsc = ''
     var alr_on = ''
     var alr_off = ''
@@ -105,24 +105,24 @@ if (config.STANDPLK == 'off' || config.STANDPLK == 'OFF') {
         }
     }));
 
- var plk_desc = ''
+ var shazz_desc = ''
  var BGM_ONE = ''
  var BGM_TWO = ''
 
     if (config.LANG == 'ML') {
       
-      plk_desc = 'മറുപടി bgm മോഡ് മാറ്റാൻ'
+      shazz_desc = 'മറുപടി bgm മോഡ് മാറ്റാൻ'
       BGM_ONE = '𝐁𝐆𝐌 തരം ഒന്നാം മോഡിലേക്ക് മാറ്റി'
       BGM_TWO = '𝐁𝐆𝐌 തരം രണ്ടാം മോഡിലേക്ക് മാറ്റി'
     }
     if (config.LANG == 'EN') {  
-    plk_desc = 'change reply message BGM mode'
+    shazz_desc = 'change reply message BGM mode'
     BGM_ONE = '𝐁𝐆𝐌 𝐭𝐲𝐩𝐞 𝐜𝐡𝗮𝐧𝐠𝐞𝐝 𝐭𝐨 𝟭𝘀𝘁 𝐦𝐨𝐝𝐞'
     BGM_TWO = '𝐁𝐆𝐌 𝐭𝐲𝐩𝐞 𝐜𝐡𝗮𝐧𝐠𝐞𝐝 𝐭𝐨 2nd 𝐦𝐨𝐝𝐞'
     }
 
 
- MyPnky.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: plk_desc, usage: '.bgm one / two' }, (async (message, match) => {
+ MyPnky.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: shazz_desc, usage: '.bgm one / two' }, (async (message, match) => {
         if (match[1] == 'two') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
@@ -267,25 +267,25 @@ if (config.STANDPLK == 'off' || config.STANDPLK == 'OFF') {
     }));
 
 
- var plk_desc = ''
+ var shazz_desc = ''
  var BGM_ONE = ''
  var BGM_TWO = ''
 
     if (config.LANG == 'ML') {
       
-      plk_desc = 'ഓട്ടോ സ്റ്റിക്കർ ഓണാക്കാനും ഓഫാക്കാനും'
+      shazz_desc = 'ഓട്ടോ സ്റ്റിക്കർ ഓണാക്കാനും ഓഫാക്കാനും'
       BGM_ONE = 'ഓട്ടോ സ്റ്റിക്കർ ഓണാക്കി'
       BGM_TWO = 'ഓട്ടോ സ്റ്റിക്കർ ഓഫാക്കി'
     }
     if (config.LANG == 'EN') {
     
-    plk_desc = 'to turn on and off auto sticker'
+    shazz_desc = 'to turn on and off auto sticker'
     STR_ON = '🇦​🇺​🇹​🇴​ 🇸​🇹​🇮​🇨​🇰​🇪​🇷​ 🇹​🇺​🇷​🇳​🇪​🇩​ 🇴​🇳​'
     STR_OFF = '🇦​🇺​🇹​🇴​ 🇸​🇹​🇮​🇨​🇰​🇪​🇷​ 🇹​🇺​🇷​🇳​🇪​🇩​ 🇴​🇫​🇫​'
     }
 
 
- MyPnky.addCommand({pattern: 'austick ?(.*)', fromMe: true, desc: plk_desc, usage: '.austick on / off' }, (async (message, match) => {
+ MyPnky.addCommand({pattern: 'austick ?(.*)', fromMe: true, desc: shazz_desc, usage: '.austick on / off' }, (async (message, match) => {
         if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
@@ -347,22 +347,22 @@ if (config.STANDPLK == 'off' || config.STANDPLK == 'OFF') {
     }));
 
     
-var plk_STN = ''
+var shazz_STN = ''
 var AFN_STN = ''
  
   if (config.LANG == 'EN') {
     
-    plk_STN = 'make your bot standby'
+    shazz_STN = 'make your bot standby'
     AFN_STN = 'make your bot not standby'  
     }
 
     if (config.LANG == 'ML') {
       
-      plk_STN = 'നിങ്ങളുടെ ബോട്ട് സ്റ്റാൻഡ്ബൈ ആക്കുക'
+      shazz_STN = 'നിങ്ങളുടെ ബോട്ട് സ്റ്റാൻഡ്ബൈ ആക്കുക'
       AFN_STN = 'സ്റ്റാൻഡ്ബൈയിൽ നിന്ന് നിങ്ങളുടെ ബോട്ട് മാറ്റുക' 
     }
 
-MyPnky.addCommand({pattern: 'standby ?(.*)', fromMe: true, desc: plk_STN }, (async (message, match) => {
+MyPnky.addCommand({pattern: 'standby ?(.*)', fromMe: true, desc: shazz_STN }, (async (message, match) => {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['STANDBY_MODE']: 'on'
