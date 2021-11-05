@@ -11,7 +11,7 @@ const dd = "Made by WhatsAsena"
 const Language = require('../language');
 const Lang = Language.getString('log');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 
     MyPnky.addCommand({pattern: 'carbon$', fromMe: true, desc: Lang.CARBON_DESC}, (async (message, match) => {
