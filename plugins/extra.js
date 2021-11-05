@@ -148,7 +148,8 @@ if (config.WORKTYPE == 'private') {
         }
 
         if (config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Sʜᴀʜɪᴅ Sᴇʀ' , MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid,'ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Sʜᴀʜɪᴅ Sᴇʀ' , MessageType.text, { quoted: message.data });
+
         }
         else {
             await message.client.sendMessage(message.jid,config.SHAZZ, MessageType.text, { quoted: message.data });
