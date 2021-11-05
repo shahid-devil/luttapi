@@ -12,7 +12,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('greetings');
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 
 MyPnky.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
@@ -115,7 +115,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     
     MyPnky.addCommand({pattern: 'welcome$', fromMe: false, desc: Lang.WELCOME_DESC}, (async (message, match) => {
     var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN ,MessageType.text ,{quoted: message.data });
+    if (!us) return await message.client.sendMessage(message.jid,Lang.SHAZZADMIN ,MessageType.text ,{quoted: message.data });
     var hg = await sql.getMessage(message.jid);
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_WELCOME,MessageType.text);
@@ -126,7 +126,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 
 MyPnky.addCommand({pattern: 'welcome (.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
     var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
+    if (!us) return await message.client.sendMessage(message.jid,Lang.SHAZZADMIN,MessageType.text ,{quoted: message.data });
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_WELCOME_TEXT);
     } else {
@@ -138,7 +138,7 @@ MyPnky.addCommand({pattern: 'welcome (.*)', fromMe: false, dontAddCommandList: t
 
 MyPnky.addCommand({pattern: 'goodbye$', fromMe: false, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
     var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
+    if (!us) return await message.client.sendMessage(message.jid,Lang.SHAZZADMIN,MessageType.text ,{quoted: message.data });
     var hg = await sql.getMessage(message.jid, 'goodbye');
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_GOODBYE,MessageType.text)
@@ -149,7 +149,7 @@ MyPnky.addCommand({pattern: 'goodbye$', fromMe: false, desc: Lang.GOODBYE_DESC},
 
 MyPnky.addCommand({pattern: 'goodbye (.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
     var us = await checkUsAdmin(message);
-    if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
+    if (!us) return await message.client.sendMessage(message.jid,Lang.SHAZZADMIN,MessageType.text ,{quoted: message.data });
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_GOODBYE_TEXT,MessageType.text);
     } else {
