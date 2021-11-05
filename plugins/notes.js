@@ -26,7 +26,7 @@ const Language = require('../language')
 const Lang = Language.getString('notes')
 const Config = require('../config');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 MyPnky.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
 
 
