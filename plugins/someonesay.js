@@ -12,7 +12,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('ttp');
 
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (Config.WORKTYPE == 'private') {
 
     MyPnky.addCommand({ pattern: 'animesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC }, (async (message, match) => {
