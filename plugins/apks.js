@@ -302,3 +302,4 @@ Shazz.addCommand({pattern: 'capcut', fromMe: false, dontAddCommandList: false}, 
       await message.sendMessage('💎 *WHATSAPP PLUS* 💎\nmhatsapp mod.\n📌 bit.ly/drkWaPlus');
    }));
 }
+}
