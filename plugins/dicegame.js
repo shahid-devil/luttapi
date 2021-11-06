@@ -11,7 +11,6 @@ const SEWB = "🎁 ```Rolling Dice!``` 🎲"
 // Results
 const SEWC = "```Dice Rolled:``` "
 
-    if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
     if (con.WORKTYPE === 'private') {
 
         Shazz.addCommand({pattern: 'roll', fromMe: true, desc: SEWA}, (async (message, match) => {
@@ -56,4 +55,4 @@ const SEWC = "```Dice Rolled:``` "
 
         }));
     }
-    }
+    
