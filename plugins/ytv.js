@@ -10,7 +10,7 @@ const Axios = require('axios')
 const conf = require('../config');
 
 if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
-if (Config.WORKTYPE == 'public') {
+let wk = conf.WORKTYPE == 'public' ? false : true
 
 Asena.addCommand({pattern: 'ytv ?(.*)', fromMe: wk, desc: 'video downloading links from youtube'}, async (message, match) => {
 
@@ -34,7 +34,7 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
         msg +=  `SIZE :${result.size}\n\n`
         msg +=  `DOWNLOADING LINK :${result.url_video}\n\n`
         msg += '```' 
-	 return await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.video, {mimetype: Mimetype.mp4, ptt: false , caption: msg , }); //thumbnail: White.tm_b 
+	 return await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.video, {mimetype: Mimetype.mp4, ptt: false , caption: msg , }); //thumbnail: ```Made by Shahid ser 🙈``` 
 });
 }
 }
