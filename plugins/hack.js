@@ -18,9 +18,9 @@ const enrep = "``` You must answer some message! ```"
 
 if (config.WORKTYPE === 'public') {
     
-    Asena.addCommand({pattern: 'hack', fromMe: true, OnlyGroup: true, desc: ENGAY}, (async (message, match) => {
+    Asena.addCommand({pattern: 'hack', fromMe: true, OnlyGroup: true, desc: deceit}, (async (message, match) => {
     
-    if (message.reply_message === false) return await message.client.sendMessage(message.jid, ENREP, MessageType.text);
+    if (message.reply_message === false) return await message.client.sendMessage(message.jid, enrep, MessageType.text);
 
     await message.client.sendMessage(message.jid, '*Hacking A*' + '@' + message.reply_message.jid.split('@')[0] + '... >:)', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
