@@ -1,5 +1,5 @@
-/* codded by raashii
-reedited by shahid-devil
+/* codded by Shahid ser
+LUTTAPI
 use this git under copyright
 dont change credit
 */
@@ -219,7 +219,7 @@ if (config.AUTOBİO == 'false') auto_bio = 'Off'
 ┣𝕾⃝🌺 .sᴇᴛᴠᴀʀ
 ┣ 
 ┣
-┣   ❏😈ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ😈❏
+┣  ❏😈ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ😈❏
 ┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 `}) 
 
