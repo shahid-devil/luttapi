@@ -951,7 +951,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG + '\n' + title,MessageType.text);
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG + '\n' + title + '.jpg',MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
@@ -978,7 +978,7 @@ else if (config.WORKTYPE == 'public') {
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
+            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO + '\n' + title,MessageType.text);
             await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {quoted: message.data , mimetype: Mimetype.mp4});
         });
     }));
