@@ -347,25 +347,8 @@ if (config.WORKTYPE == 'private') {
             });
             await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
         }));
-    }
     
-        if(langMatch = match[1].match("\\{([a-z]{2})\\}")) {
-            LANG = langMatch[1]
-            ttsMessage = ttsMessage.replace(langMatch[0], "")
-        } 
-        if(speedMatch = match[1].match("\\{([0].[0-9]+)\\}")) {
-            SPEED = parseFloat(speedMatch[1])
-            ttsMessage = ttsMessage.replace(speedMatch[0], "")
-        }
-
-        var buffer = await googleTTS.synthesize({
-            text: ttsMessage,
-            voice: LANG
-        });
-        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio,quoted: message.data,  ptt: true});
-    }));
-
-    MyPnky.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
+       MyPnky.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
