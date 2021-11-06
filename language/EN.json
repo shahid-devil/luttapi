@@ -497,7 +497,7 @@
             "URL": "Profile URL:",
             "UPDATE": "Last Update:"
         },
-              "weather": {
+        "weather": {
             "WEATHER_DESC": "Shows the weather.",
             "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather kozhikode```",
             "LOCATION": "Location",
@@ -565,17 +565,15 @@
             "IGTVDESC":"Download videos from IGTV link",
             "NEED_WORDIGTV":"Please provide the IGTV link",
             "LOADINGTV":"Loading...",
-             "NOT_FOUNDIG":"Insta video not found",
-             "USERNAME":"Username",
+            "NOT_FOUNDIG":"Insta video not found",
+            "USERNAME":"Username",
             "CAPTION":"Caption",
-             "VID":"Video",
-             "NEED_WORDIG":"Download videos from IG link",
+            "VID":"Video",
+            "NEED_WORDIG":"Download videos from IG link",
             "IGDESC":"Download videos from IG link \n For Reels change the 'reels' in the link to 'p'.",
             "FBDESC":"Download videos from fb link",
             "NEED_WORDFB":"Download videos from fb link",
-            "NOT_FOUNDFB":"Fb video not found"
-            
-            
+            "NOT_FOUNDFB":"Fb video not found"          
         },
         "tiktok": {
             "TİKTOK": "Downloads videos from Tiktok.",
