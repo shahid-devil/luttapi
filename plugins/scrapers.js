@@ -129,7 +129,6 @@ if (config.LANG == 'RU') {
     dlang_input = 'Обработанный текст:'
 }
 
-if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
@@ -1390,4 +1389,4 @@ await message.client.sendMessage(message.jid, {displayname: "Sʜᴀʜɪᴅ Sᴇ�
     }));
     
 }
-}
+
