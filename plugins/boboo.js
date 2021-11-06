@@ -133,7 +133,7 @@ luttapi.addCommand({pattern: 'twt ?(.*)', fromMe: false,  dontAddCommandList: tr
         async (err) => await message.sendMessage(errorMessage("Error" )),
       )
   },
-)*/
+)
 
 
 
