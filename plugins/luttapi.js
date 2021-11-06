@@ -9,6 +9,7 @@ LUTTAPI
 const Ktb = require('../events');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const fs = require('fs');
+const Config = require('../config');
 const axios = require('axios');
 
 if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
