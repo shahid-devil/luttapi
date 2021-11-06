@@ -16,7 +16,6 @@ const deceit = "Hacked to the person who answers the message."
 // Need Reply
 const enrep = "``` You must answer some message! ```"
 
-if (Config.STANDSHAZZ == 'off' || Config.STANDSHAZZ == 'OFF') {
 if (config.WORKTYPE === 'public') {
     
     Asena.addCommand({pattern: 'hack', fromMe: true, OnlyGroup: true, desc: ENGAY}, (async (message, match) => {
@@ -92,4 +91,4 @@ Asena.addCommand({pattern: 'chocolate', fromMe: true, OnlyGroup: true}, (async (
 
 }));
 }
-}
+
