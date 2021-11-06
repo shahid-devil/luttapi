@@ -734,9 +734,8 @@ await message.client.sendMessage(message.jid, {displayname: "Sʜᴀʜɪᴅ Sᴇ�
     }));
 
 }
+
 else if (config.WORKTYPE == 'public') {
-
-
 
     MyPnky.addCommand({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
