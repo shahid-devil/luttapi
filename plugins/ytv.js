@@ -37,4 +37,4 @@ var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType
 	 return await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.video, {mimetype: Mimetype.mp4, ptt: false , caption: msg , }); //thumbnail: ```Made by Shahid ser 🙈``` 
 });
 }
-}
+
