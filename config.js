@@ -38,7 +38,7 @@ module.exports = {
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     WEL_GIF: process.env.WEL_GIF === undefined ? 'https://i.imgur.com/nErXUGj.mp4' : process.env.WEL_GIF,
     GIF_BYE: process.env.GIF_BYE === undefined ? 'https://i.imgur.com/Z1jCYGN.mp4' : process.env.GIF_BYE,
-    BOTSHAZZ: process.env.BOT_NAME === undefined ? 'ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ' : process.env.BOT_NAME,
+    BOTSHAZZ: process.env.BOT_NAME === undefined ? '😈ʟᴜᴛᴛᴀᴘɪ ʙᴏᴛ😈' : process.env.BOT_NAME,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
     TALKING_LUTTAPI: process.env.TALKING_LUTTAPI === undefined ? 'false' : process.env.TALKING_LUTTAPI,
     STICKERP: process.env.STICKER_REPLY === undefined ? false : convertToBool(process.env.STICKER_REPLY),
