@@ -6,7 +6,7 @@ const MyPnky = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
-const Pinky = require('../pinky');
+const Pinky = require('../luttapi');
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
 const Heroku = require('heroku-client');
@@ -1031,7 +1031,7 @@ else if (config.WORKTYPE == 'public') {
           )
       },
     )
-      MyPnky.addCommand({pattern: 'number', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+      MyPnky.addCommand({pattern: 'shazz', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
             const p_lk = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
