@@ -25,6 +25,7 @@ module.exports = {
     AFN: process.env.ALL_CAPTION === undefined ? 'ᴍᴀᴅᴇ ʙʏ Sʜᴀʜɪᴅ Sᴇʀ🤗' : process.env.ALL_CAPTION,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
     STANDSHAZZ: process.env.STANDBY_MODE === undefined ? 'off' : process.env.STANDBY_MODE,
+    CALLB: process.env.CALL_BLOCK === undefined ? 'false' : process.env.CALL_BLOCK,
     PM_BLOCK: process.env.PM_BLOCK === undefined ? 'false' : process.env.PM_BLOCK,
     Z_LUTTAPI_AI: process.env.Z_LUTTAPI_AI === undefined ? 'false' : process.env.Z_LUTTAPI_AI,
     SHAZZ: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
