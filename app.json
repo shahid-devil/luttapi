@@ -186,6 +186,11 @@
             "required": true,
             "value": "one"
         },
+         "CALL_BLOCK": {
+            "description": "will block members if they call on voice/video, if true ",
+            "required": true,
+            "value": "true"
+        },
         "DEMOTE_MESSAGE": {
             "description": "Customizable Demote Message! Use => default, to change back.",
             "required": false,
