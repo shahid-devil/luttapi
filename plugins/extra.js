@@ -303,6 +303,16 @@ else if (config.WORKTYPE == 'public') {
 	}
     });
 
+    MyPnky.addCommand({pattern: 'callblock ?(.*)', fromMe: true, desc: 'change mode off call block', usage: '.callblock *on/off* ' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('𝖤𝗇𝗍𝖾𝗋 𝖸𝗈𝗎𝗋 on/off 𝖺𝖿𝗍𝖾𝗋 𝖼𝗈𝗆𝗆𝖺𝗇𝖽')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['CALL_BLOCK']: match[1]
+            }
+        });
+        await message.sendMessage("```Call block mode``` 𝖼𝗁𝖺𝗇𝗀𝖾𝖽 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 ✅")
+    }));
+
     MyPnky.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
         if (message.jid === '15369524516-1612300121@g.us') {
