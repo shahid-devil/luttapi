@@ -14,8 +14,6 @@ const axios = require('axios')
 const request = require('request');
 const os = require('os');
 
-let wk = Config.WORKTYPE == 'public' ? false : true
-
 var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
 
 var wish = ''
@@ -62,7 +60,7 @@ if (config.ANTİLİNK == 'true') auto_bio = ' ᴏɴ'
 if (config.ANTİLİNK == 'false') auto_bio = ' ᴏғғ'
 
 
-Rashi.tozara({ pattern: 'asist', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+luttapi.addCommand({pattern: 'asist', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
   // send a list message!
   const rows = [
 
