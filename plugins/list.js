@@ -9,7 +9,7 @@ const { MessageType, GroupSettingChange, Mimetype, MessageOptions } = require('@
 const fs = require('fs');
 const config = require('../config')
 const Config = require('../config')
-const zara = require('../zara')
+const luttapi = require('../luttapi')
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
@@ -56,13 +56,13 @@ if (jamss == 22) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 if (jamss == 23) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 
 
-if (config.ZARA_AI == 'true') eva = ' ᴏɴ'
-if (config.ZARA_AI == 'false') eva = ' ᴏғғ'
+if (config.LUTTAPI_AI == 'true') eva = ' ᴏɴ'
+if (config.LUTTAPI_AI == 'false') eva = ' ᴏғғ'
 if (config.ANTİLİNK == 'true') auto_bio = ' ᴏɴ'
 if (config.ANTİLİNK == 'false') auto_bio = ' ᴏғғ'
 
 
-Rashi.tozara({ pattern: 'menu', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Rashi.tozara({ pattern: 'asist', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
   // send a list message!
   const rows = [
 
@@ -77,7 +77,7 @@ Rashi.tozara({ pattern: 'menu', fromMe: wk, dontAddCommandList: true}, (async (m
     { title: '𝚃𝚁𝙾𝙻𝙻 𝙿𝙰𝙲𝙺', description: ``, rowId: ".logopack2" }
     
        ]
-const desc = `*╭────────────────*\n*┊      ʜᴇʏ ʙʀᴏ* ` + wish +`\n*┊*\n*┊ ɴᴀᴍᴇ :* ` + Config.BOTPLK + `\n*┊ ᴛɪᴍᴇ :* ` + time + `\n*┊ ᴏᴡɴᴇʀ :* ` + Config.PLK + `\n*┊ ᴢᴀʀᴀ ᴀɪ :* ` + eva + `\n*┊ ᴡᴋ ᴛʏᴘᴇ :* ` + Config.WORKTYPE + `\n*┊ ᴀɴᴛɪ ʟɪɴᴋ :* ` + auto_bio + `\n*┊ ʜᴀɴᴅɪʟᴇʀs :* ` + Config.HANDLERS + `\n*┊*\n*┊*   ` + zara.DESC + `\n*┊*\n*╰────────────────*`
+const desc = `*╭────────────────*\n*┊      ʜᴇʏ ʙʀᴏ* ` + wish +`\n*┊*\n*┊ ɴᴀᴍᴇ :* ` + Config.BOTPLK + `\n*┊ ᴛɪᴍᴇ :* ` + time + `\n*┊ ᴏᴡɴᴇʀ :* ` + Config.PLK + `\n*┊ ᴢᴀʀᴀ ᴀɪ :* ` + eva + `\n*┊ ᴡᴋ ᴛʏᴘᴇ :* ` + Config.WORKTYPE + `\n*┊ ᴀɴᴛɪ ʟɪɴᴋ :* ` + auto_bio + `\n*┊ ʜᴀɴᴅɪʟᴇʀs :* ` + Config.HANDLERS + `\n*┊*\n*┊*   ` + luttapi.DESC + `\n*┊*\n*╰────────────────*`
  
   const sections = [{ title: "  𝒆𝒏𝒋𝒐𝒚 𝒐𝒖𝒓 𝒔𝒆𝒓𝒗𝒊𝒄𝒆", rows: rows }]
 
